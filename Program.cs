@@ -1,46 +1,37 @@
+using System.Reflection;
 using Fleck;
+using lib;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+var clientEventHandlers = builder.FindAndInjectClientEventHandlers(Assembly.GetExecutingAssembly());
 
 var app = builder.Build();
 
 var server = new WebSocketServer("ws://0.0.0.0:8181");
-var wsConnections = new List<IWebSocketConnection>();
-server.Start(socket =>
+
+var wsConenctions = new List<IWebSocketConnection>();
+
+server.Start(ws =>
 {
-    socket.OnOpen = () =>
+    ws.OnOpen = () =>
     {
-        wsConnections.Add(socket);
+        wsConenctions.Add(ws);
     };
-    socket.OnMessage = message =>
+    ws.OnMessage = message =>
     {
-        foreach (var webSocketConnection in wsConnections)
+        // evaluate whether or not message.eventType == 
+        // trigger event handler
+        try
         {
-            webSocketConnection.Send(message);
+            app.InvokeClientEventHandler(clientEventHandlers, ws, message);
+
+        }
+        catch (Exception e)
+        {
+            // your exception handling here
         }
     };
 });
 
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
+Console.ReadLine();

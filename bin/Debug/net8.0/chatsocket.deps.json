@@ -10,7 +10,8 @@
         "dependencies": {
           "Fleck": "1.2.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.0-preview.7.23375.9",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "uldahlalex.websocket.boilerplate": "1.6.0"
         },
         "runtime": {
           "chatsocket.dll": {}
@@ -36,6 +37,7 @@
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
+      "Microsoft.Extensions.Logging.Abstractions/7.0.1": {},
       "Microsoft.OpenApi/1.4.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
@@ -81,6 +83,40 @@
             "fileVersion": "6.4.0.0"
           }
         }
+      },
+      "System.Reactive/6.0.0": {
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.1"
+          }
+        }
+      },
+      "System.Threading.Channels/7.0.0": {},
+      "uldahlalex.websocket.boilerplate/1.6.0": {
+        "dependencies": {
+          "Fleck": "1.2.0",
+          "Websocket.Client": "5.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/lib.dll": {
+            "assemblyVersion": "1.6.0.0",
+            "fileVersion": "1.6.0.0"
+          }
+        }
+      },
+      "Websocket.Client/5.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
+          "System.Reactive": "6.0.0",
+          "System.Threading.Channels": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Websocket.Client.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
       }
     }
   },
@@ -110,6 +146,13 @@
       "sha512": "sha512-Ckb5EDBUNJdFWyajfXzUIMRkhf52fHZOQuuZg/oiu8y7zDCVwD0iHhew6MnThjHmevanpxL3f5ci2TtHQEN6bw==",
       "path": "microsoft.extensions.apidescription.server/6.0.5",
       "hashPath": "microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pkeBFx0vqMW/A3aUVHh7MPu3WkBhaVlezhSZeb1c9XD0vUReYH1TLFSy5MxJgZfmz5LZzYoErMorlYZiwpOoNA==",
+      "path": "microsoft.extensions.logging.abstractions/7.0.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512"
     },
     "Microsoft.OpenApi/1.4.3": {
       "type": "package",
@@ -145,6 +188,34 @@
       "sha512": "sha512-1Hh3atb3pi8c+v7n4/3N80Jj8RvLOXgWxzix6w3OZhB7zBGRwsy7FWr4e3hwgPweSBpwfElqj4V4nkjYabH9nQ==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.4.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    },
+    "System.Reactive/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
+      "path": "system.reactive/6.0.0",
+      "hashPath": "system.reactive.6.0.0.nupkg.sha512"
+    },
+    "System.Threading.Channels/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qmeeYNROMsONF6ndEZcIQ+VxR4Q/TX/7uIVLJqtwIWL7dDWeh0l1UIqgo4wYyjG//5lUNhwkLDSFl+pAWO6oiA==",
+      "path": "system.threading.channels/7.0.0",
+      "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
+    },
+    "uldahlalex.websocket.boilerplate/1.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qKANsFV29n9g2med71rO9z5Zs2T0CcFooDqfvw7CKGdCYOvwLP4XqfA68hDJFMOfImuThk2s/m8UwB3k9Cc+3g==",
+      "path": "uldahlalex.websocket.boilerplate/1.6.0",
+      "hashPath": "uldahlalex.websocket.boilerplate.1.6.0.nupkg.sha512"
+    },
+    "Websocket.Client/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6CG+9GPj3VsqlKBR5tD/36SF/XTdu4CLMIgLsgrKMhQHvPX01Tfu7kkWNZg/vONadChhbZsNw6KnpYddnwmfxA==",
+      "path": "websocket.client/5.0.0",
+      "hashPath": "websocket.client.5.0.0.nupkg.sha512"
     }
   }
 }

@@ -52,6 +52,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "uldahlalex.websocket.boilerplate": {
+              "target": "Package",
+              "version": "[1.6.0, )"
             }
           },
           "imports": [

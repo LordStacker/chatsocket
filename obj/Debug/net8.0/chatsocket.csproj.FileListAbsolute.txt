@@ -38,3 +38,7 @@ C:\Users\nicoe\OneDrive\Escritorio\chatsocket\bin\Debug\net8.0\frontend\package.
 C:\Users\nicoe\OneDrive\Escritorio\chatsocket\bin\Debug\net8.0\frontend\tsconfig.app.json
 C:\Users\nicoe\OneDrive\Escritorio\chatsocket\bin\Debug\net8.0\frontend\tsconfig.json
 C:\Users\nicoe\OneDrive\Escritorio\chatsocket\bin\Debug\net8.0\frontend\tsconfig.spec.json
+C:\Users\nicoe\OneDrive\Escritorio\chatsocket\bin\Debug\net8.0\System.Reactive.dll
+C:\Users\nicoe\OneDrive\Escritorio\chatsocket\bin\Debug\net8.0\lib.dll
+C:\Users\nicoe\OneDrive\Escritorio\chatsocket\bin\Debug\net8.0\Websocket.Client.dll
+C:\Users\nicoe\OneDrive\Escritorio\chatsocket\obj\Debug\net8.0\chatsocket.sourcelink.json
