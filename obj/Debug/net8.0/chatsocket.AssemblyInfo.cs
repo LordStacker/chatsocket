@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("chatsocket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75f9128f5af2494158fa31ecfe78b841ff8adbad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f516a3c0a4ac764c63763522f4a5319f32c8bed")]
 [assembly: System.Reflection.AssemblyProductAttribute("chatsocket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("chatsocket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
